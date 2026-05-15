@@ -1,0 +1,3 @@
+# One directory base per line (paths or full URLs on the allowed host).
+# Used with: python fuzzer.py --url http://target/ -W /path/to/SecLists -D examples/dir.txt.example
+/admin

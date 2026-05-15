@@ -1,0 +1,14 @@
+llm:
+  provider: "ollama"
+  model: "qwen2.5-coder:7b"
+  base_url: "http://localhost:11434"
+  temperature: 0.1
+  keep_alive: "2m"
+
+project:
+  name: "AI-Fuzzer-Agent"
+
+limits:
+  max_requests_per_minute: 60
+  max_depth: 2
+  max_runtime_minutes: 20

@@ -1,0 +1,50 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local env / secrets
+.env
+.env.*
+*.log
+*.ovpn
+
+# Scan output (generated at runtime)
+app/data/
+app/reports/*
+!app/reports/.gitkeep
+
+# Wordlists (clone separately — large)
+SecLists/
+
+# Tools installed by install.py (downloaded binaries)
+bin/
+
+# IDE / OS
+.idea/
+.vscode/
+.cursor/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Local test / lab files (keep examples/ in repo)
+dir.txt
+admin.htmll
+*.htmll
+targets.txt
+
+# Archives from manual tool downloads
+*.zip
+*.tar.gz
+*.tgz

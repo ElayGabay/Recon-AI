@@ -1,0 +1,6 @@
+requests
+httpx
+pydantic
+pyyaml
+rich
+python-dotenv
