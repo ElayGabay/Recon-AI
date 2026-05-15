@@ -1,4 +1,4 @@
-# Recon+
+# Recon+ AI
 
 Local AI-assisted reconnaissance agent for authorized web security testing, HTB labs, CTF machines, and internal approved targets.
 
