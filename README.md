@@ -121,35 +121,6 @@ While Recon+ is running:
 | `status` | Task progress |
 | `exit` / `q` | Stop gracefully |
 
-## Output
-
-| Path | Contents |
-|---|---|
-| `app/reports/REPORT.txt` | Live human-readable report |
-| `app/reports/findings.jsonl` | Raw evidence (source of truth) |
-| `app/data/ffuf/` | ffuf JSON |
-| `app/data/nmap/` | Nmap XML |
-
-These directories are created at runtime and ignored by git (see `.gitignore`).
-
-## Project structure
-
-```
-AI-Fuzzer-Agent/
-├── app/
-│   ├── agent/          # Orchestrator, Ollama brain, report writers
-│   ├── core/           # Scope, wordlists, output, runtime
-│   ├── llm/            # Ollama HTTP client
-│   ├── tools/          # ffuf, nmap, probes, param discovery, LFI
-│   ├── data/           # Scan artifacts (gitignored)
-│   └── reports/        # REPORT.txt, findings.jsonl
-├── bin/                # ffuf/nmap from install.py (gitignored)
-├── examples/           # Sample --dir file
-├── install.py          # Cross-platform setup
-├── fuzzer.py           # CLI entry point
-└── requirements.txt
-```
-
 ## Safety
 
 - Scope is enforced: only the target host and its subdomains
@@ -157,6 +128,3 @@ AI-Fuzzer-Agent/
 - CVE enrichment uses a local static database only — the model cannot invent CVE IDs
 - Use only on targets you are authorized to test
 
-## License
-
-Add your license here before publishing (e.g. MIT).
